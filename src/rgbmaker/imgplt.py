@@ -293,7 +293,7 @@ plot powerlaw of spectralindex
   ax1.set_xlabel('frequency (MHz)')
   anchored_text = AnchoredText(f'spectral index: {si[0]}', loc=1)
   ax1.add_artist(anchored_text)
-  anchored_text_manual = AnchoredText(f'Steep (old plasma) < -1\Flat spectrum -1\Not so old plasma > -1', loc=2)
+  anchored_text_manual = AnchoredText(f'Steep (old plasma) ', loc=2)
   ax1.add_artist(anchored_text_manual)
   label=f"{label}.{kind}"
   outputfile = save_fig(plt,fig,kind,output=label)
